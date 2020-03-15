@@ -1,0 +1,25 @@
+<p appBasicHighlight>slam Erfan</p>
+
+<p appAdvancedHighlight [defultColor]="'brown'" [highlightColor]="'yellow'"> salam advance</p>
+
+<button (click)="makeDisapear()">Toggle</button>
+<h5>{{absent}}</h5>
+<div *appUnless="absent">
+    <ul>
+        <li *ngFor="let n of names">
+            {{n}}
+        </li>
+    </ul>
+</div>
+
+<!-- <div *ngIf="absent">
+    <ul>
+        <li *ngFor="let n of names">
+            {{n}}
+        </li>
+    </ul>
+</div> -->
+
+<router-outlet>
+
+</router-outlet>
